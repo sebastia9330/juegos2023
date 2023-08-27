@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class controljugador : MonoBehaviour
 {
+    public float rapido = 10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,6 @@ public class controljugador : MonoBehaviour
     {
         //mover el tanke
       //  transform.Translate(0, 0, 1);
-      transform.Translate(Vector3.forward * Time.deltaTime * 15);
+      transform.Translate(Vector3.forward * Time.deltaTime * rapido);
     }
 }
